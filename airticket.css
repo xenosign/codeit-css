@@ -48,6 +48,8 @@ button:disabled {
 }
 
 .trip {
+  display: flex;
+  justify-content: space-between;
   margin: 40px 0 24px;
   padding: 24px 32px;
   border-radius: 8px;
@@ -86,6 +88,8 @@ button:disabled {
 }
 
 .flights-header {
+  display: flex;
+  align-items: end;
   margin-bottom: 40px;
 }
 
@@ -93,6 +97,10 @@ button:disabled {
 .flights-header-col {
   padding-bottom: 18px;
   border-bottom: 1px solid #d6dbe8;
+}
+
+.flights-header-result {
+  flex-grow: 1;
 }
 
 .flights-header-col {
@@ -112,15 +120,20 @@ button:disabled {
 }
 
 .flight-card {
+  display: flex;
   margin: 24px 0;
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(18, 23, 42, 0.1);
 }
 
+.flight-card > .ticket {
+  flex-grow: 1;
+}
+
 .flight-card > .cabin {
   width: 147px;
-  border-left: 1px solid #e5e9f3;
+  border-left: 1px solid #dcdfe7;
 }
 
 .ticket-label {
@@ -151,7 +164,24 @@ button:disabled {
 }
 
 .flight-card .departure-arrival {
+  display: flex;
+  justify-content: space-between;
   font-weight: 700;
+}
+
+.flight-card .departure-arrival .departure-time {
+  margin-bottom: 20px;
+}
+
+.flight-card .departure-arrival .flight-time {
+  text-align: center;
+}
+
+.cabin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cabin .name,
@@ -191,6 +221,10 @@ button:disabled {
 }
 
 .ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   padding: 47px;
   border-radius: 8px;
   background-color: #ebeff8;
