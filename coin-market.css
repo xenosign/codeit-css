@@ -60,7 +60,8 @@ main {
     margin: 24px 0;
     grid-template-areas:
       'prices assets'
-      'prices order';
+      'prices order'
+      'prices .';
     grid-template-rows: 307px 1fr;
     grid-template-columns: 1fr 437px;
     gap: 24px;  
@@ -245,15 +246,15 @@ table.price-table td {
 
 .order {
   grid-area: order;
+  height: 100%;
 }
 
 .order-types {
   display: flex;
-  width: 100%;
 }
 
 .order-type {
-  flex-grow: 1;
+  flex: 1 1 auto;
   padding: 8px;
   border-bottom: 2px solid #d1d1dc;
   color: #d1d1dc;
