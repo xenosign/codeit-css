@@ -29,6 +29,19 @@ section {
   margin: 40px 0;
 }
 
+/* top section */
+.top {
+  display: flex;
+  gap: 48px;
+}
+
+.top .slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
 .featured-thumb {
   border-radius: 24px;
 }
@@ -57,6 +70,13 @@ section {
   color: #868686;
 }
 
+/* playlist section */
+.play-lists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
 .playlist-thumb {
   width: 100%;
   border-radius: 16px;
@@ -72,6 +92,12 @@ section {
 .playlist-artist {
   color: #868686;
   margin: 0;
+}
+
+/* reccommend-artist section */
+.artists {
+  display: flex;
+  gap: 24px;
 }
 
 .artist {
@@ -92,19 +118,22 @@ section {
   margin: 24px 0 0;
 }
 
+/* feeling section */
+.stations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
 .station {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 16px;
 }
 
-.charts {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
+/* top-100 section */
 .charts-header {
+  position: relative;
   margin: 32px 0;
 }
 
@@ -113,6 +142,9 @@ section {
 }
 
 .charts-see-all {
+  position: absolute;
+  top: 0;
+  right: 0;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -120,8 +152,32 @@ section {
   color: #d9d9d9;
 }
 
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .chart {
-  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;  
+  width: 100%;  
+}
+
+.chart-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chart-rank {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .chart-number {
@@ -131,7 +187,8 @@ section {
   background: #1a1a1a;
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 42px;
+  text-align: center;
 }
 
 .chart-change {
