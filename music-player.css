@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  display: flex;
   margin: 0;
   background-color: #000;
   color: #fff;
@@ -57,13 +58,27 @@ body {
 }
 
 .player {
+  position: fixed;
+  bottom: -6px;
+  left: 0;
+  right: 0;
   height: 100px;
 }
 
 .player-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 16px 40px;
   background-color: rgba(48, 48, 55, 0.7);
   backdrop-filter: blur(15px);
+}
+
+.info {
+  flex-basis: 320px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .current {
@@ -89,6 +104,8 @@ body {
 }
 
 .time {
+  flex-basis: 320px;
+  text-align: right;
   color: #8c8993;
 }
 
