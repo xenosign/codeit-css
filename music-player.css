@@ -9,7 +9,7 @@ html {
 
 body {
   display: flex;
-  margin: 0;
+  margin: 0;  
   background-color: #000;
   color: #fff;
   font-size: 16px;
@@ -18,10 +18,17 @@ body {
 }
 
 .sidebar {
+  position: fixed;
+  top: 0;
   padding: 16px;
   background-color: #161519;
   color: #8c8993;
   width: 240px;
+  height: 100%;
+}
+
+main {
+  margin-left: 240px;
 }
 
 .logo {
